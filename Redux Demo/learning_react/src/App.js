@@ -1,9 +1,11 @@
 import React from 'react'
+import CounterApp from './features/counter/CounterApp'
 
 const App = () => {
   return (
-    <div>App</div>
-  )
+<>
+  <CounterApp/>
+</>  )
 }
 
 export default App
