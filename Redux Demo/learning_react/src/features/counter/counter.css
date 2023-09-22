@@ -3,6 +3,16 @@ body{
     padding: 0;
     box-sizing: border-box;
     font-family: 'Times New Roman', Times, serif;
+    background-color: #9D81CB;
+}
+
+.heading-one{
+    text-align: center;
+    text-decoration: underline;
+}
+
+.redux-toolkit{
+    color: white;
 }
 
 .counter-parent{
@@ -18,7 +28,7 @@ body{
 .number{
     text-align: center;
     position: relative;
-    top: 25%;
+    top: 10%;
     font-size: 2.5rem;
 }
 
@@ -28,32 +38,110 @@ body{
 }
 
 .btn{
-    margin-top: 25%;
-    border-radius: 50px;
+    margin-top: 10%;
     padding: 0.3rem;
     border: none;
+    height: 5vh;
     font-weight: bold;
 }
 
 .btn-one{
-    background-color: #d13434d0;
-    box-shadow: 0px 1px 5px 2px salmon;
+    box-shadow: 0px 1px 5px 2px greenyellow;
+    background-color: #0cbd0c;
 }
 
 .btn-two{
-    background-color: #0cbd0c;
-    box-shadow: 0px 1px 5px 2px greenyellow;
+    box-shadow: 0px 1px 5px 2px salmon;
+    background-color: #d13434d0;
 }
 
 .btn-reset{
 
     height: 4vh;
     padding: 0.3rem;
-    border-radius: 50px;
     border: none;
+    height: 5vh;
     font-weight: bold;
-    margin-top: 25%;
+    margin-top: 10%;
     background-color: black;
     color: #ffffff;
+    box-shadow: 0 1px 3px 0.2px white;
 
+}
+
+.add-amount-btn{
+    background-color: #5eff5e;
+    font-weight: bold;
+    border: none;
+}
+
+.input-amount-parent{
+    display: flex;
+    position: relative;
+    top: 5%;
+}
+
+
+/* Media Queries */
+
+/* Min Width 481 px and Max Width 768 px */
+
+@media screen and (min-width:481px) and (max-width:768px) {
+
+    .counter-parent{
+        width: 50vw;
+        height: 30vh;
+        margin-top: 15rem;
+    }
+
+    .input-number{
+        width: 40vw;
+    }
+
+    .btn{
+        margin-top: 4rem;
+    }
+
+    .btn-reset{
+
+        height: 4vh;
+        padding: 0.3rem;
+        border: none;
+        height: 5vh;
+        font-weight: bold;
+        margin-top: 4rem;
+        background-color: black;
+        color: #ffffff;
+        box-shadow: 0 1px 3px 0.2px white;
+    
+    }
+    
+}
+
+/* Min Width 320 px and Max Width 480 px */
+
+@media screen and (min-width:320px) and (max-width:480px) {
+
+    .counter-parent{
+        width: 70vw;
+        height: 40vh;
+        margin-top: 5rem;
+        padding: 0.1rem;
+    }
+
+    .input-number{
+        width: 50vw;
+    }
+
+    .btn{
+        margin-top: 3rem;   
+    }
+
+    .btn-reset{
+
+
+        margin-top: 3rem;
+    
+    }
+    
 }
